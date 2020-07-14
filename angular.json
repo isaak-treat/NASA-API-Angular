@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "NASA-API-Angular"
+    }
+  },
+  "defaultProject": "NASA-API-Angular",
+  "cli": {
+    "analytics": "15936e72-1a6c-43a6-a20e-d5ffe70e7d80"
+  }
 }
