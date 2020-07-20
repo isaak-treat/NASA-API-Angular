@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ApodComponent } from './apod/apod.component';
 import { AppRoutingModule } from './app-routing.module';
+import { InsightComponent } from './insight/insight.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ApodComponent
+    ApodComponent,
+    InsightComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

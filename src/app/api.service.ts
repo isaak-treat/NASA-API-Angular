@@ -11,4 +11,8 @@ export class ApiService {
   public getAPOD() {
     return this.httpClient.get(`https:api.nasa.gov/planetary/apod?api_key=${this.API_KEY}`);
   }
+
+  public getMarsWeather() {
+    return this.httpClient.get(`https:api.nasa.gov/insight_weather/?api_key=${this.API_KEY}&feedtype=json&ver=1.0`);
+  }
 }

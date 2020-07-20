@@ -12,7 +12,6 @@ export class ApodComponent implements OnInit {
 
   ngOnInit(): void {
     this.apiService.getAPOD().subscribe((data) => {
-      console.log(data);
       this.photoOfDay = data
       console.log(this.photoOfDay);
     });
