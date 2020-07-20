@@ -7,13 +7,15 @@ import { ApiService } from '../api.service';
   styleUrls: ['./insight.component.css']
 })
 export class InsightComponent implements OnInit {
-  marsWeather;
   constructor(private apiService: ApiService) { }
-
+  marsWeather;
+  arrTemp: string [];
   ngOnInit(): void {
     this.apiService.getMarsWeather().subscribe((data) => {
       console.log(data);
       this.marsWeather = data;
+      this.arrTemp = data as string[];
+      console.log(this.arrTemp[1])
     });
   }
 
