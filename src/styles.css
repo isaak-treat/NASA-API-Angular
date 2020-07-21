@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+@import '@angular/material/prebuilt-themes/purple-green.css';
+
+html, body { background-color:#333333;  height: 100%; }
+body { margin: 10; font-family: Roboto, "Helvetica Neue", sans-serif; color: lightgray; }
+
+a:link {
+    color: lightcyan;
+    text-decoration: underline;
+    }
+    a:visited {
+    color: blueviolet;
+    text-decoration: underline;
+    }
+    a:hover {
+    color: green;
+    text-decoration: none;
+    }
