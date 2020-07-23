@@ -1,40 +1,44 @@
-<h1>Insight Mars Weather</h1>
-<h1>WEATHER FOR SOLS: {{marsWeather.sol_keys}}</h1>
+<div id="outer">
+  <h1 class="heading">Insight Mars Weather</h1>
+  <h1 class="dayTitle">WEATHER FOR SOLS: {{marsWeather.sol_keys}}</h1>
 
-<ul>
-  Sol {{marsWeather.sol_keys[0]}}
-  <li>Minimum Weather (°F): {{marsWeather[marsWeather.sol_keys[0]].AT.mn}}</li>
-  <li>Maximum Weather (°F): {{marsWeather[marsWeather.sol_keys[0]].AT.mx}}</li>
-  <li>Average Weather (°F): {{marsWeather[marsWeather.sol_keys[0]].AT.av}}</li>
-  <br />
-  Sol {{marsWeather.sol_keys[1]}}
-  <li>Minimum Weather (°F): {{marsWeather[marsWeather.sol_keys[1]].AT.mn}}</li>
-  <li>Maximum Weather (°F): {{marsWeather[marsWeather.sol_keys[1]].AT.mx}}</li>
-  <li>Average Weather (°F): {{marsWeather[marsWeather.sol_keys[1]].AT.av}}</li>
-  <br />
-  Sol {{marsWeather.sol_keys[2]}}
-  <li>Minimum Weather (°F): {{marsWeather[marsWeather.sol_keys[2]].AT.mn}}</li>
-  <li>Maximum Weather (°F): {{marsWeather[marsWeather.sol_keys[2]].AT.mx}}</li>
-  <li>Average Weather (°F): {{marsWeather[marsWeather.sol_keys[2]].AT.av}}</li>
-  <br />
-  Sol {{marsWeather.sol_keys[3]}}
-  <li>Minimum Weather (°F): {{marsWeather[marsWeather.sol_keys[3]].AT.mn}}</li>
-  <li>Maximum Weather (°F): {{marsWeather[marsWeather.sol_keys[3]].AT.mx}}</li>
-  <li>Average Weather (°F): {{marsWeather[marsWeather.sol_keys[3]].AT.av}}</li>
-  <br />
-  Sol {{marsWeather.sol_keys[4]}}
-  <li>Minimum Weather (°F): {{marsWeather[marsWeather.sol_keys[4]].AT.mn}}</li>
-  <li>Maximum Weather (°F): {{marsWeather[marsWeather.sol_keys[4]].AT.mx}}</li>
-  <li>Average Weather (°F): {{marsWeather[marsWeather.sol_keys[4]].AT.av}}</li>
-  <br />
-  Sol {{marsWeather.sol_keys[5]}}
-  <li>Minimum Weather (°F): {{marsWeather[marsWeather.sol_keys[5]].AT.mn}}</li>
-  <li>Maximum Weather (°F): {{marsWeather[marsWeather.sol_keys[5]].AT.mx}}</li>
-  <li>Average Weather (°F): {{marsWeather[marsWeather.sol_keys[5]].AT.av}}</li>
-  <br />
-  Sol {{marsWeather.sol_keys[6]}}
-  <li>Minimum Weather (°F): {{marsWeather[marsWeather.sol_keys[6]].AT.mn}}</li>
-  <li>Maximum Weather (°F): {{marsWeather[marsWeather.sol_keys[6]].AT.mx}}</li>
-  <li>Average Weather (°F): {{marsWeather[marsWeather.sol_keys[6]].AT.av}}</li>
-  <br />
-</ul>
+  <div class="table">
+    <ul id="horizontal-list">
+      Sol {{marsWeather.sol_keys[0]}}
+      <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[0]].AT.mn}}</li>
+      <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[0]].AT.mx}}</li>
+      <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[0]].AT.av}}</li>
+      <br />
+      Sol {{marsWeather.sol_keys[1]}}
+      <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[1]].AT.mn}}</li>
+      <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[1]].AT.mx}}</li>
+      <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[1]].AT.av}}</li>
+      <br />
+      Sol {{marsWeather.sol_keys[2]}}
+      <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[2]].AT.mn}}</li>
+      <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[2]].AT.mx}}</li>
+      <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[2]].AT.av}}</li>
+      <br />
+      Sol {{marsWeather.sol_keys[3]}}
+      <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[3]].AT.mn}}</li>
+      <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[3]].AT.mx}}</li>
+      <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[3]].AT.av}}</li>
+      <br />
+      Sol {{marsWeather.sol_keys[4]}}
+      <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[4]].AT.mn}}</li>
+      <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[4]].AT.mx}}</li>
+      <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[4]].AT.av}}</li>
+      <br />
+      Sol {{marsWeather.sol_keys[5]}}
+      <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[5]].AT.mn}}</li>
+      <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[5]].AT.mx}}</li>
+      <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[5]].AT.av}}</li>
+      <br />
+      Sol {{marsWeather.sol_keys[6]}}
+      <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[6]].AT.mn}}</li>
+      <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[6]].AT.mx}}</li>
+      <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[6]].AT.av}}</li>
+      <br />
+    </ul>
+  </div>
+</div>
