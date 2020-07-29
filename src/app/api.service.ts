@@ -9,7 +9,7 @@ export class ApiService {
   constructor(private httpClient: HttpClient) { }
 
   public getAPOD() {
-   return this.httpClient.get(`https:api.nasa.gov/planetary/apod?api_key=${this.API_KEY}`);
+   return this.httpClient.get(`https:api.nasa.gov/planetary/apod?api_key=${this.API_KEY}&hd=true`);
   }
 
   public getMarsWeather() {
