@@ -1,0 +1,52 @@
+.navigation {
+  background-color: #1E3231;
+  color: #1E3231;
+  font-family: 'Krona One', sans-serif;
+  font-size: 24px;
+  display: block;
+  display: table;
+  margin: auto;
+}
+
+  .navigation a {
+    text-decoration: none;
+    display: inline-table;
+    padding: 30px;
+    background-color: #1E3231;
+    color: #CEFF1A;
+  }
+
+.menu-bar {
+  background-color: #1E3231;
+  width: 100%;
+  left: 10px;
+}
+.navigation a:hover {
+  background-color: #1E3231;
+  color: #E8EEF2;
+}
+
+h1 {
+  font-family: 'Krona One', sans-serif;
+  font-size: 36px;
+  text-align: center;
+
+}
+  h1 a {
+    padding-top: 10px;
+    text-decoration: none;
+    color: #CEFF1A;
+    background-color: #1E3231;
+    width: 100%;
+  }
+
+ul#horizontalList {
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+}
+
+ul#horizontalList li {
+display: inline;
+padding: 20px;
+}
