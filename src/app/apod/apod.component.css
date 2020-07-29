@@ -1,8 +1,10 @@
 .entire-container h1 {
   color: #1E3231;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 32px;
+  font-weight: bold;
 
 }
 
@@ -11,13 +13,14 @@ p#date {
   color: #1E3231;
   text-align: center;
   padding-top: 6px;
+  
 }
 p#explanation {
-  font-size: 18px;
+  font-size: 16px;
   color: #1E3231;
-  text-align: center;
-  padding-left: 560px;
-  padding-right: 560px;
+  text-justify: distribute-all-lines;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 img#image {
@@ -25,4 +28,7 @@ img#image {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+  border-width: 5px;
+  border-color: #CEFF1A;
+  border-style: solid;
 }
