@@ -14,13 +14,13 @@
 }
 
 ul#horizontal-list {
-    min-width: 696px;
+    min-width: 0px;
     list-style: none;
     padding-top: 20px;
     color: #000000;
 }
 
 ul#horizontal-list li {
-    display: inline;
+    display: inline-block;
     padding: 20px;
 }
