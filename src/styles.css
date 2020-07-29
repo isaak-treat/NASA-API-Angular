@@ -3,7 +3,8 @@
 @import '@angular/material/prebuilt-themes/purple-green.css';
 
 html, body {
-  background-color: #babdbc;
+  /* background-color: #babdbc; */
+  background-color: darkgrey;
   height: 100%;
   color: #333333;
   margin: 0px;

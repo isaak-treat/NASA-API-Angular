@@ -1,9 +1,14 @@
 .entire-container h1 {
   color: #1E3231;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 32px;
   font-weight: bold;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5455fb4f01b207bb6730c1ccd3dd6ef909cbc06d
 }
 
 p#date {
@@ -11,13 +16,22 @@ p#date {
   color: #CEFF1A;
   text-align: center;
   padding-top: 6px;
+  
 }
 p#explanation {
+<<<<<<< HEAD
   font-size: 20px;
   color: #1E3231;
   text-align: center;
   padding-left: 496px;
   padding-right: 496px;
+=======
+  font-size: 16px;
+  color: #1E3231;
+  text-justify: distribute-all-lines;
+  padding-left: 300px;
+  padding-right: 300px;
+>>>>>>> 5455fb4f01b207bb6730c1ccd3dd6ef909cbc06d
 }
 
 img#image {
@@ -25,5 +39,11 @@ img#image {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+<<<<<<< HEAD
   border: 4px solid #CEFF1A ;
+=======
+  border-width: 5px;
+  border-color: #CEFF1A;
+  border-style: solid;
+>>>>>>> 5455fb4f01b207bb6730c1ccd3dd6ef909cbc06d
 }

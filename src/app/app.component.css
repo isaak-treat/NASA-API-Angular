@@ -4,14 +4,15 @@
   font-family: 'Krona One', sans-serif;
   font-size: 24px;
   display: block;
-  display: table;
+  /* display: table; */
   margin: auto;
 }
 
   .navigation a {
     text-decoration: none;
     display: inline-table;
-    padding: 30px;
+    padding: 20px;
+    padding-bottom: 30px;
     background-color: #1E3231;
     color: #CEFF1A;
   }
@@ -34,16 +35,16 @@ h1 {
 
 }
   h1 a {
-    padding-top: 10px;
+    padding-top: 10px;   
     text-decoration: none;
     color: #1E3231;
-    background-color: #babdbc;
     width: 100%;
   }
 
 ul#horizontalList {
   min-width: 696px;
   list-style: none;
+  text-align: center;
   padding-top: 20px;
 }
 
