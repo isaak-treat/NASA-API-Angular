@@ -17,7 +17,7 @@ ul#horizontal-list {
     min-width: 696px;
     list-style: none;
     padding-top: 20px;
-
+    color: #000000;
 }
 
 ul#horizontal-list li {

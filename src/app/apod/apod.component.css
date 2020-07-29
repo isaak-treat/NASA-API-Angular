@@ -3,21 +3,21 @@
   text-align: center;
   padding-top: 20px;
   font-size: 32px;
-
+  font-weight: bold;
 }
 
 p#date {
   font-size: 16px;
-  color: #1E3231;
+  color: #CEFF1A;
   text-align: center;
   padding-top: 6px;
 }
 p#explanation {
-  font-size: 18px;
+  font-size: 20px;
   color: #1E3231;
   text-align: center;
-  padding-left: 560px;
-  padding-right: 560px;
+  padding-left: 496px;
+  padding-right: 496px;
 }
 
 img#image {
@@ -25,4 +25,5 @@ img#image {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+  border: 4px solid #CEFF1A ;
 }
