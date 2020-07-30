@@ -5,7 +5,7 @@
 }
 
 #outer {
-    height: 84px;
+  height: 84px;
 }
 
 .table {
@@ -19,8 +19,34 @@ ul#horizontal-list {
     padding-top: 20px;
     color: #000000;
 }
-
 ul#horizontal-list li {
-    display: inline-block;
-    padding: 20px;
+  display: inline-block;
+  padding: 20px;
+}
+
+
+.sol-card {
+  height: 200px;
+  width: 160px;
+  background-color: #ffffff;
+  text-align: center;
+  transition: 0.9s;
+  color: #000000;
+}
+
+.sol-date {
+    padding-top: 18px;
+    padding-left: 5px;
+    font-size: 32px;
+}
+
+.average-temp {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 62px;
+}
+
+.sol-card:hover {
+    background-color: #000000;
+    color: #ffffff
 }

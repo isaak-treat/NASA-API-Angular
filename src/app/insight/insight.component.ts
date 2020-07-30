@@ -7,13 +7,16 @@ import { ApiService } from '../api.service';
   styleUrls: ['./insight.component.css']
 })
 export class InsightComponent implements OnInit {
-  constructor(private apiService: ApiService) { }
   marsWeather;
+  constructor(private apiService: ApiService) { }
+
   ngOnInit(): void {
-    this.apiService.getMarsWeather().subscribe((data) => {
-      console.log(data);
-      this.marsWeather = data;
+
+    this.apiService.getMarsWeather().then(result => {
+      result.subscribe((data) => {
+        console.log(data);
+        this.marsWeather = data;
+      });
     });
   }
-
 }

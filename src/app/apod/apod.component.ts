@@ -7,13 +7,16 @@ import { ApiService } from '../api.service';
   styleUrls: ['./apod.component.css']
 })
 export class ApodComponent implements OnInit {
-  photoOfDay;
+  photoOfDay = { title: null };
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
-    this.apiService.getAPOD().subscribe((data) => {
-      this.photoOfDay = data
-      console.log(this.photoOfDay);
+   
+    this.apiService.getAPOD().then(result => {
+      result.subscribe((data) => {
+        this.photoOfDay = data
+        console.log(this.photoOfDay);
+      });
     });
   }
 
