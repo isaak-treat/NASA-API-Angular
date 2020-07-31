@@ -7,7 +7,7 @@ import { ApiService } from '../api.service';
   styleUrls: ['./insight.component.css']
 })
 export class InsightComponent implements OnInit {
-  marsWeather;
+  marsWeather = { sol_keys: null,};
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
@@ -18,5 +18,9 @@ export class InsightComponent implements OnInit {
         this.marsWeather = data;
       });
     });
+  }
+
+  testClick(): void {
+    console.log("This a test");
   }
 }

@@ -1,8 +1,8 @@
 .heading {
-    font-size: 40px;
-    color: #ffffff;
-    padding-top: 10px;
-    text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .dayTitle{
@@ -58,4 +58,5 @@ ul#horizontal-list li {
     background-color: #1E3231;
     /* color: #ffffff */
     color: #CEFF1A;
+    cursor: pointer;
 }

@@ -5,6 +5,7 @@
 html, body {
   /* background-color: #babdbc; */
   background-color: darkgrey;
+  background-image: url("/assets/stars.jpg");
   height: 100%;
   color: #333333;
   margin: 0px;
