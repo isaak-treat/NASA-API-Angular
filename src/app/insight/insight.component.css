@@ -1,3 +1,5 @@
+
+
 .heading {
   font-size: 40px;
   color: #ffffff;
@@ -15,8 +17,8 @@
 }
 
 .table {
-    display: inline-table;
-    margin: 0 auto;
+    position: relative;
+    display: table;
 }
 
 ul#horizontal-list {
@@ -32,11 +34,16 @@ ul#horizontal-list li {
 
 
 .sol-card {
+  left: 44px;
+  padding: 20px;
+  margin: 20px;
+  position: center;
+  display: inline-block;
   height: 200px;
   width: 160px;
-  background-color: lightgrey;
+  background-color: #ffffff;
   text-align: center;
-  transition: 0.9s;
+  transition: 0.5s;
   color: #1E3231;
 }
 
@@ -56,4 +63,9 @@ ul#horizontal-list li {
     background-color: #1E3231;
     color: #CEFF1A;
     cursor: pointer;
+}
+
+.active {
+  background-color: #1E3231;
+  color: #CEFF1A;
 }

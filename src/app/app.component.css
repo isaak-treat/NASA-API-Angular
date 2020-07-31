@@ -11,20 +11,20 @@
   display: inline-table;
   padding: 20px;
   padding-bottom: 30px;
-  background-color: #1E3231;
-  color: #CEFF1A;
+  background-color:  #0a045f;
+  color: #ce1b1b;
   transition: 0.5s;
 
 }
 
 .menu-bar {
-  background-color: #1E3231;
+  background-color: #0a045f;
   width: 100%;
   left: 10px;
 }
 .navigation a:hover {
-  background-color: #1E3231;
-  color: #E8EEF2;
+  background-color:  #0a045f;
+  color: #7abfec;
   cursor: default;
 }
 
@@ -39,10 +39,14 @@
   margin-top: -20px;
   margin-bottom: -24px;
 }
-.full-navigation h1 a {
-    padding-top: 10px;   
+  .full-navigation h1 a {
+    padding-top: 10px;
+  }
+  h1 a {
+    padding-top: 20px;   
     text-decoration: none;
-    color: #1E3231;
+    color: #7abfec;
+    
     width: 100%;
   }
 

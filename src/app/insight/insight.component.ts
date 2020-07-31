@@ -23,12 +23,14 @@ export class InsightComponent implements OnInit {
     });
   }
 
+
   expandSol(i): void {
+
+
     if (this.day_index === i) {
       this.day_index = -1;
     } else {
       this.day_index = i
-    }
+    } 
   }
-
 }

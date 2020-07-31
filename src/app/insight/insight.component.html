@@ -1,11 +1,14 @@
-<div id="outer">
-  <h1 class="heading">Insight Mars Weather</h1>
-  <h1 class="dayTitle">WEATHER FOR SOLS: {{marsWeather.sol_keys}}</h1>
 
+<div id="outer">
+ 
+  <h1 class="heading">Insight Mars Weather</h1>
+ 
+  
   <div class="table">
+    
     <ul id="horizontal-list">
         <li>
-          <mat-card class="sol-card" (click)="expandSol(i)" *ngFor="let solKey of marsWeather.sol_keys; index as i">
+          <mat-card class="sol-card" [ngClass]="{'active': i === day_index}" (click)="expandSol(i)" *ngFor="let solKey of marsWeather.sol_keys; index as i">
             <mat-card-header>
               <mat-card-title class="sol-date">SOL {{marsWeather.sol_keys[i]}}</mat-card-title>
             </mat-card-header>
@@ -16,10 +19,14 @@
           </mat-card>
         </li>
       </ul>
-
+  
     <div class="expanded-day" *ngIf="marsWeather.sol_keys" [ngClass]="{'hidden': day_index < 0}">
-      <h1>Test</h1>
-      <h1>{{marsWeather.sol_keys[day_index]}}</h1>
+      <mat-card class="expanded-card">
+        <mat-card-header>
+          <mat-card-title class="expanded-card-date">SOL {{marsWeather.sol_keys[day_index]}}</mat-card-title>
+        </mat-card-header>
+      </mat-card>
     </div>
   </div>
+
 </div>
