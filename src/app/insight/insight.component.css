@@ -15,7 +15,7 @@
 }
 
 .table {
-    display: table;
+    display: inline-table;
     margin: 0 auto;
 }
 
@@ -34,7 +34,6 @@ ul#horizontal-list li {
 .sol-card {
   height: 200px;
   width: 160px;
-  /* background-color: #ffffff; */
   background-color: lightgrey;
   text-align: center;
   transition: 0.9s;
@@ -54,9 +53,7 @@ ul#horizontal-list li {
 }
 
 .sol-card:hover {
-    /* background-color: #000000; */
     background-color: #1E3231;
-    /* color: #ffffff */
     color: #CEFF1A;
     cursor: pointer;
 }

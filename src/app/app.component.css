@@ -28,16 +28,18 @@
   cursor: default;
 }
 
-h1 {
+.full-navigation h1 {
   font-family: 'Krona One', sans-serif;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
   background-color: #ffffff;
-
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-top: -20px;
+  margin-bottom: -24px;
 }
-  h1 a {
+.full-navigation h1 a {
     padding-top: 10px;   
     text-decoration: none;
     color: #1E3231;
@@ -54,4 +56,14 @@ ul#horizontalList {
 ul#horizontalList li {
 display: inline;
 padding: 20px;
+}
+
+
+.footer {
+  font-family: 'Krona One', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffffff;
+  position: static;
 }
