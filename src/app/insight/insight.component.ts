@@ -7,20 +7,28 @@ import { ApiService } from '../api.service';
   styleUrls: ['./insight.component.css']
 })
 export class InsightComponent implements OnInit {
-  marsWeather = { sol_keys: null,};
+
+  marsWeather = { sol_keys: null };
+  day_index: number;
+
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
-
     this.apiService.getMarsWeather().then(result => {
       result.subscribe((data) => {
         console.log(data);
         this.marsWeather = data;
+        this.day_index = -1;
       });
     });
   }
 
-  testClick(): void {
-    console.log("This a test");
+  expandSol(i): void {
+    if (this.day_index === i) {
+      this.day_index = -1;
+    } else {
+      this.day_index = i
+    }
   }
+
 }

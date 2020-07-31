@@ -4,131 +4,22 @@
 
   <div class="table">
     <ul id="horizontal-list">
-      <li>
-        <mat-card class="sol-card" (click)="testClick()">
-          <mat-card-header>
-            <mat-card-title class="sol-date">SOL {{marsWeather.sol_keys[0]}}</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <p class="average-temp">{{marsWeather[marsWeather.sol_keys[0]].AT.av.toFixed()}}°F</p>
-            <p>{{marsWeather[marsWeather.sol_keys[0]].AT.mx.toFixed()}}°F | {{marsWeather[marsWeather.sol_keys[0]].AT.mn.toFixed()}}°F</p>
-          </mat-card-content>
-        </mat-card>
-      </li>
+        <li>
+          <mat-card class="sol-card" (click)="expandSol(i)" *ngFor="let solKey of marsWeather.sol_keys; index as i">
+            <mat-card-header>
+              <mat-card-title class="sol-date">SOL {{marsWeather.sol_keys[i]}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p class="average-temp">{{marsWeather[marsWeather.sol_keys[i]].AT.av.toFixed()}}°F</p>
+              <p>{{marsWeather[marsWeather.sol_keys[i]].AT.mx.toFixed()}}°F | {{marsWeather[marsWeather.sol_keys[i]].AT.mn.toFixed()}}°F</p>
+            </mat-card-content>
+          </mat-card>
+        </li>
+      </ul>
 
-      <li>
-        <mat-card class="sol-card">
-          <mat-card-header>
-            <mat-card-title class="sol-date">SOL {{marsWeather.sol_keys[1]}}</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <p class="average-temp">{{marsWeather[marsWeather.sol_keys[1]].AT.av.toFixed()}}°F</p>
-            <p>{{marsWeather[marsWeather.sol_keys[1]].AT.mx.toFixed()}}°F | {{marsWeather[marsWeather.sol_keys[1]].AT.mn.toFixed()}}°F</p>
-          </mat-card-content>
-        </mat-card>
-      </li>
-
-      <li>
-        <mat-card class="sol-card">
-          <mat-card-header>
-            <mat-card-title class="sol-date">SOL {{marsWeather.sol_keys[2]}}</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <p class="average-temp">{{marsWeather[marsWeather.sol_keys[2]].AT.av.toFixed()}}°F</p>
-            <p>{{marsWeather[marsWeather.sol_keys[2]].AT.mx.toFixed()}}°F | {{marsWeather[marsWeather.sol_keys[2]].AT.mn.toFixed()}}°F</p>
-          </mat-card-content>
-        </mat-card>
-      </li>
-
-      <li>
-        <mat-card class="sol-card">
-          <mat-card-header>
-            <mat-card-title class="sol-date">SOL {{marsWeather.sol_keys[3]}}</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <p class="average-temp">{{marsWeather[marsWeather.sol_keys[3]].AT.av.toFixed()}}°F</p>
-            <p>{{marsWeather[marsWeather.sol_keys[3]].AT.mx.toFixed()}}°F | {{marsWeather[marsWeather.sol_keys[3]].AT.mn.toFixed()}}°F</p>
-          </mat-card-content>
-        </mat-card>
-      </li>
-
-      <li>
-        <mat-card class="sol-card">
-          <mat-card-header>
-            <mat-card-title class="sol-date">SOL {{marsWeather.sol_keys[4]}}</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <p class="average-temp">{{marsWeather[marsWeather.sol_keys[4]].AT.av.toFixed()}}°F</p>
-            <p>{{marsWeather[marsWeather.sol_keys[4]].AT.mx.toFixed()}}°F | {{marsWeather[marsWeather.sol_keys[4]].AT.mn.toFixed()}}°F</p>
-          </mat-card-content>
-        </mat-card>
-      </li>
-
-      <li>
-        <mat-card class="sol-card">
-          <mat-card-header>
-            <mat-card-title class="sol-date">SOL {{marsWeather.sol_keys[5]}}</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <p class="average-temp">{{marsWeather[marsWeather.sol_keys[5]].AT.av.toFixed()}}°F</p>
-            <p>{{marsWeather[marsWeather.sol_keys[5]].AT.mx.toFixed()}}°F | {{marsWeather[marsWeather.sol_keys[5]].AT.mn.toFixed()}}°F</p>
-          </mat-card-content>
-        </mat-card>
-      </li>
-
-      <li>
-        <mat-card class="sol-card">
-          <mat-card-header>
-            <mat-card-title class="sol-date">SOL {{marsWeather.sol_keys[6]}}</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <p class="average-temp">{{marsWeather[marsWeather.sol_keys[6]].AT.av.toFixed()}}°F</p>
-            <p>{{marsWeather[marsWeather.sol_keys[6]].AT.mx.toFixed()}}°F | {{marsWeather[marsWeather.sol_keys[6]].AT.mn.toFixed()}}°F</p>
-
-          </mat-card-content>
-        </mat-card>
-      </li>
-    </ul>
+    <div class="expanded-day" *ngIf="marsWeather.sol_keys" [ngClass]="{'hidden': day_index < 0}">
+      <h1>Test</h1>
+      <h1>{{marsWeather.sol_keys[day_index]}}</h1>
+    </div>
   </div>
-  <!--
-      <div class="table">
-        <ul id="horizontal-list">
-          Sol {{marsWeather.sol_keys[0]}}
-          <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[0]].AT.mn}}</li>
-          <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[0]].AT.mx}}</li>
-          <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[0]].AT.av}}</li>
-          <br />
-          Sol {{marsWeather.sol_keys[1]}}
-          <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[1]].AT.mn}}</li>
-          <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[1]].AT.mx}}</li>
-          <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[1]].AT.av}}</li>
-          <br />
-          Sol {{marsWeather.sol_keys[2]}}
-          <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[2]].AT.mn}}</li>
-          <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[2]].AT.mx}}</li>
-          <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[2]].AT.av}}</li>
-          <br />
-          Sol {{marsWeather.sol_keys[3]}}
-          <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[3]].AT.mn}}</li>
-          <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[3]].AT.mx}}</li>
-          <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[3]].AT.av}}</li>
-          <br />
-          Sol {{marsWeather.sol_keys[4]}}
-          <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[4]].AT.mn}}</li>
-          <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[4]].AT.mx}}</li>
-          <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[4]].AT.av}}</li>
-          <br />
-          Sol {{marsWeather.sol_keys[5]}}
-          <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[5]].AT.mn}}</li>
-          <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[5]].AT.mx}}</li>
-          <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[5]].AT.av}}</li>
-          <br />
-          Sol {{marsWeather.sol_keys[6]}}
-          <li>Minimum Temperature (°F): {{marsWeather[marsWeather.sol_keys[6]].AT.mn}}</li>
-          <li>Maximum Temperature (°F): {{marsWeather[marsWeather.sol_keys[6]].AT.mx}}</li>
-          <li>Average Temperature (°F): {{marsWeather[marsWeather.sol_keys[6]].AT.av}}</li>
-          <br />
-        </ul>
-      </div>
-    -->
 </div>

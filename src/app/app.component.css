@@ -6,15 +6,16 @@
   margin: auto;
 }
 
-  .navigation a {
-    text-decoration: none;
-    display: inline-table;
-    padding: 20px;
-    padding-bottom: 30px;
-    background-color: #1E3231;
-    color: #CEFF1A;
-    transition: 0.5s;
-  }
+.navigation a {
+  text-decoration: none;
+  display: inline-table;
+  padding: 20px;
+  padding-bottom: 30px;
+  background-color: #1E3231;
+  color: #CEFF1A;
+  transition: 0.5s;
+
+}
 
 .menu-bar {
   background-color: #1E3231;
@@ -33,7 +34,8 @@ h1 {
   font-weight: bold;
   text-align: center;
   background-color: #ffffff;
-  /* background-image: linear-gradient(red, yellow, green); */
+
+  margin-top: -20px;
 }
   h1 a {
     padding-top: 10px;   

@@ -1,5 +1,5 @@
 .entire-container h1 {
-  color: #1E3231;
+  color: #ffffff;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -16,12 +16,11 @@ p#date {
 }
 p#explanation {
   font-size: 20px;
-  color: #1E3231;
+  color: #ffffff;
   text-align: center;
   padding-left: 496px;
   padding-right: 496px;
   font-size: 16px;
-  color: #1E3231;
   text-justify: distribute-all-lines;
   padding-left: 300px;
   padding-right: 300px;
