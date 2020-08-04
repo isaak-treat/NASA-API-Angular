@@ -69,3 +69,24 @@ ul#horizontal-list li {
   background-color: #1E3231;
   color: #CEFF1A;
 }
+
+.expanded-card {
+  background-color: #1E3231;
+  color: #CEFF1A;
+}
+
+.expanded-card-date {
+  padding-top: 10px;
+  text-align: right;
+  font-size: 32px;
+}
+
+.expanded-content {
+  text-decoration: none;
+  position: center;
+  display: inline-block;
+}
+
+.season {
+    text-transform: capitalize;
+}

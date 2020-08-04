@@ -8,7 +8,7 @@ import { ApiService } from '../api.service';
 })
 export class InsightComponent implements OnInit {
 
-  marsWeather = { sol_keys: null };
+  marsWeather = { };
   day_index: number;
 
   constructor(private apiService: ApiService) { }
