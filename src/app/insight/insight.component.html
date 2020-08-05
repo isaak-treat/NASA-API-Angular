@@ -26,27 +26,27 @@
           <mat-card-title class="expanded-card-date">SOL {{marsWeather.sol_keys[day_index]}}</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-          <div class="expanded-content">
-            <ul>
-              Temperature
-              <li>High: {{marsWeather[marsWeather.sol_keys[day_index]].AT.mx.toFixed()}}°F</li>
-              <li>Low: {{marsWeather[marsWeather.sol_keys[day_index]].AT.mn.toFixed()}}°F</li>
-            </ul>
-            <ul>
-              Wind Speeds
-              <li>High: {{marsWeather[marsWeather.sol_keys[day_index]].HWS.mx.toFixed(3)}} m/s</li>
-              <li>Low: {{marsWeather[marsWeather.sol_keys[day_index]].HWS.mn.toFixed(3)}} m/s</li>
-            </ul>
-            <ul>
-              Atmospheric Pressure
-              <li>High: {{marsWeather[marsWeather.sol_keys[day_index]].PRE.mx.toFixed()}} Pa</li>
-              <li>Low: {{marsWeather[marsWeather.sol_keys[day_index]].PRE.mn.toFixed()}} Pa</li>
-            </ul>
-            <ul class="season">
-              Season
-              <li>{{marsWeather[marsWeather.sol_keys[day_index]].Season}}</li>
-            </ul>
-          </div>
+            <div class="expanded-content">
+              <ul>
+                Temperature
+                <li>High: {{marsWeather[marsWeather.sol_keys[day_index]].AT.mx.toFixed()}}°F</li>
+                <li>Low: {{marsWeather[marsWeather.sol_keys[day_index]].AT.mn.toFixed()}}°F</li>
+              </ul>
+              <ul>
+                Wind Speeds
+                <li>High: {{marsWeather[marsWeather.sol_keys[day_index]].HWS.mx.toFixed(3)}} m/s</li>
+                <li>Low: {{marsWeather[marsWeather.sol_keys[day_index]].HWS.mn.toFixed(3)}} m/s</li>
+              </ul>
+              <ul>
+                Atmospheric Pressure
+                <li>High: {{marsWeather[marsWeather.sol_keys[day_index]].PRE.mx.toFixed()}} Pa</li>
+                <li>Low: {{marsWeather[marsWeather.sol_keys[day_index]].PRE.mn.toFixed()}} Pa</li>
+              </ul>
+              <ul class="season">
+                Season
+                <li>{{marsWeather[marsWeather.sol_keys[day_index]].Season}}</li>
+              </ul>
+            </div>
         </mat-card-content>
       </mat-card>
     </div>

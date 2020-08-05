@@ -76,6 +76,9 @@ ul#horizontal-list li {
   background-color: #0a045f;
   color: #7abfec;
   opacity: 0.8;
+  left: 120px;
+  width: 890px;
+  margin-bottom: 50px;
 }
 
 .expanded-card-date {
@@ -89,6 +92,7 @@ ul#horizontal-list li {
   position: center;
   display: inline-block;
 }
+
 
 .season {
     text-transform: capitalize;
