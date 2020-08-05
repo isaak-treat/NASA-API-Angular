@@ -14,7 +14,7 @@ export class ApodComponent implements OnInit {
    
     this.apiService.getAPOD().then(result => {
       result.subscribe((data) => {
-        this.photoOfDay = data
+        this.photoOfDay = data;
         console.log(this.photoOfDay);
       });
     });

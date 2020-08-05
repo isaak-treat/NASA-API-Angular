@@ -2,14 +2,15 @@
 
 .heading {
   font-size: 40px;
-  color: #ffffff;
+  font-weight: bold;
+  color: #ffffffd5;
   padding-top: 10px;
   text-align: center;
 }
 
 .dayTitle{
   text-align: center;
-  color: #1E3231;
+  color: #000000;
 
 }
 #outer {
@@ -25,7 +26,7 @@ ul#horizontal-list {
     min-width: 0px;
     list-style: none;
     padding-top: 20px;
-    color: #1E3231;
+    color: #000000;
 }
 ul#horizontal-list li {
   display: inline-block;
@@ -41,10 +42,10 @@ ul#horizontal-list li {
   display: inline-block;
   height: 200px;
   width: 160px;
-  background-color: #ffffff;
+  background-color: #ffffffde;
   text-align: center;
   transition: 0.5s;
-  color: #1E3231;
+  color: #000000;
 }
 
 .sol-date {
@@ -60,19 +61,19 @@ ul#horizontal-list li {
 }
 
 .sol-card:hover {
-    background-color: #1E3231;
-    color: #CEFF1A;
+    background-color: #0a045f;
+    color: #ce1b1b;
     cursor: pointer;
 }
 
 .active {
-  background-color: #1E3231;
-  color: #CEFF1A;
+  background-color: #0a045f;
+  color: #7abfec;
 }
 
 .expanded-card {
-  background-color: #1E3231;
-  color: #CEFF1A;
+  background-color: #0a045f;
+  color: #7abfec;
 }
 
 .expanded-card-date {
