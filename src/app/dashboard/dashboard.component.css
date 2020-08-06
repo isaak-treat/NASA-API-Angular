@@ -1,0 +1,10 @@
+mat-grid-tile {
+    display: inline-grid;
+    margin: 20px;
+    margin-left: 300px;
+}
+
+mat-grid-tile img {
+    margin-left: 470px;
+    width: 400px;
+}

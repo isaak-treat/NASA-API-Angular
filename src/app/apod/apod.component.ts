@@ -7,7 +7,7 @@ import { ApiService } from '../api.service';
   styleUrls: ['./apod.component.css']
 })
 export class ApodComponent implements OnInit {
-  photoOfDay = { };
+  photoOfDay = { copyright: null, date: null, explanation: null, media_type: null, service_version: null, title: null, url: null };
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
