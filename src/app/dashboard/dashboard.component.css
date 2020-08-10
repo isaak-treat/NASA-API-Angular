@@ -9,28 +9,24 @@ mat-grid-tile-logo img{
 }
 
 .overview {
-  
-    padding: 30px;
-    margin: 20px;
-    /* position: center; */
-    display: inline-block;
-    max-height: 250px;
-    max-width: 400px;
-    background-color: #ffffffde;
-    opacity: 0.9;
-    text-align: left;
-    transition: 0.5s; 
-    color: #000000;
-    
+  padding: 30px;
+  margin: 20px;
+  height: 200px;
+  width: 350px;
+  background-color: #ffffffde;
+  opacity: 0.9;
+  text-align: left;
+  transition: 0.5s;
+  color: #000000;
+  display: inline-block;
 }
 
+
 .overview:hover {
-    margin: 30px;
     text-justify: distribute-all-lines;
     font: bold;
     color:#7abfec;
     background-color: #0a045f;
-    cursor: pointer;
    
 
 }
