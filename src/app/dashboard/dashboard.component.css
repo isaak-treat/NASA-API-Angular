@@ -8,15 +8,25 @@ mat-grid-tile-logo img{
   
 }
 
+.row{
+    
+    display: table;
+    margin-left: 5%;
+}
+
 .overview {
-  padding: 30px;
-  margin: 20px;
+  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  margin: 30px;
+  margin-bottom: 40px;
   height: 200px;
   width: 350px;
   background-color: #ffffffde;
   opacity: 0.9;
   text-align: left;
   transition: 0.5s;
+  
   color: #000000;
   display: inline-block;
 }
